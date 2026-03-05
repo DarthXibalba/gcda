@@ -159,8 +159,6 @@ This avoids issues with:
 - CI pipelines
 - cross-platform filesystems
 
----
-
 # 🔮 Long-Term Vision
 
 Over time, this compendium aims to grow into a structured knowledge base covering:
@@ -186,8 +184,6 @@ The following resources serve as foundational material and inspiration for the t
 
 - **LeetCode** – A widely used platform for practicing data structures and algorithms problems commonly encountered in technical interviews.  
   https://leetcode.com/
-
----
 
 ## 📖 Books
 
