@@ -30,8 +30,9 @@ Amazon EBS provides block-level storage volumes that can be attached to EC2 inst
 
 - Persistent storage for EC2
 - Low-latency access
-- Bootable FS, tied to a specific EC2 instance
 - Suitable for transactional workloads
+- Bootable FS, tied to a specific EC2 instance
+  - EBS & EC2 must be located within the same AZ
 
 ### Volume Types
 
@@ -42,7 +43,7 @@ Amazon EBS provides block-level storage volumes that can be attached to EC2 inst
 
 ### Use Cases
 
-- Databases
+- **Databases**
 - Boot volumes for EC2
 - Applications requiring consistent low latency
 
@@ -56,9 +57,9 @@ Amazon EFS is a fully managed file storage service that provides shared file acc
 
 ### Key Characteristics
 
-- Supports NFS (Network File System)
-- Automatically scales storage
-- Shared access across instances (network FS)
+- Supports Network File System (NFS)
+- Multiple clients/instances can simultaneously access the same data
+- Automatically scales storages
 - Non-bootable FS
 
 ### Use Cases
@@ -201,3 +202,15 @@ AWS provides a comprehensive suite of storage services tailored to different app
 - **Glacier** for archival storage
 
 Selecting the correct storage service is a fundamental system design decision that directly impacts performance, cost, and scalability.
+
+---
+
+## 📚 References
+
+### 🌐 Online
+- [AWS Storage Explained | EBS vs EFS vs S3 | AWS Training](https://youtu.be/C9StEK6EMQY?si=bISyYGGKabftYnVl) – *KodeKloud*
+- [Amazon/AWS S3 (Simple Storage Service) Basics | S3 Tutorial, Creating a Bucket | AWS for Beginners](https://youtu.be/mDRoyPFJvlU?si=P4cOip8B7sZtsdGK) – *Tiny Technical Tutorials*
+- [AWS Storage - EBS vs S3 vs EFS](https://youtu.be/6vNC_BCqFmI?si=mN_8ivUIXfNRD4Yt) – *AWS with Chetan*
+
+### 📖 Books
+- **The Self-Taught Cloud Computing Engineer** | Chapter 2: Amazon Cloud Storage Services — *Dr. Logan Song*  
