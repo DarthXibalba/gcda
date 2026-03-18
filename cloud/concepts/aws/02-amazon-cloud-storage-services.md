@@ -6,8 +6,6 @@ AWS provides a range of cloud storage solutions designed to meet different use c
 
 Understanding these storage services is foundational for designing scalable, reliable, and cost-efficient cloud architectures.
 
----
-
 ## Storage Categories in AWS
 
 AWS storage services can be broadly categorized into four types:
@@ -108,6 +106,13 @@ Amazon FSx provides fully managed file systems optimized for specific workloads.
 - Accessible via HTTP/HTTPS APIs
 - Designed for scalability and high availability
 
+### Use Cases
+
+- Static website hosting
+- Data lakes
+- Backup and restore
+- Media storage
+
 ### Core Concepts
 
 - **Bucket**: A container for storing objects
@@ -121,7 +126,7 @@ S3 provides multiple storage classes optimized for different use cases all with 
 - **S3 Standard**: Frequently accessed data that is immediately available across multiple AZs
 - **S3 Standard-IA**: Infrequent access with lower cost
 - **S3 One Zone-IA**: Lower cost, single AZ storage.
-- **S3 Glacier Instant**: Archival storage. Low-cost option for rarely accessed data with the same performance as S3 standard.
+- **S3 Glacier Instant**: Archival storage. Low-cost option for rarely accessed data with the same performance as S3 standard. (Think *Backups*)
 - **S3 Glacier Flexible**: Cold-start archival storage that requires time to access.
 - **S3 Glacier Deep Archive**: Lowest-cost long-term storage meant for data that is never needed (think *Compliance*)
 - **S3 Intelligent-Tiering**: Automatic cost optimization
@@ -137,38 +142,10 @@ S3 provides multiple storage classes optimized for different use cases all with 
 | S3 Glacier Deep Archive | can handle two simultaneous AZ failures | Egress fee per GB outbound + 90day duration charge + retrieval fee + minimum file size charge | Cheapest storage class but requires the most amount of time to access, comes in 2 options for data retrieval speed *(Standard, Bulk)* |
 | S3 Intelligent-Tiering | | Storage class costs are still applied | Additional monitoring/automation cost per 1000 objects |
 
-### Use Cases
-
-- Static website hosting
-- Data lakes
-- Backup and restore
-- Media storage
-
----
-
-## Amazon S3 Glacier
-
-### Definition
-
-S3 Glacier is a low-cost storage service designed for long-term archival.
-
-### Key Characteristics
-
-- Very low storage cost
-- Retrieval times range from minutes to hours
-- Optimized for infrequently accessed data
-
-### Tiers
-
-- **Glacier Instant Retrieval**
-- **Glacier Flexible Retrieval**
-- **Glacier Deep Archive**
-
-### Use Cases
-
-- Compliance archives
-- Backup retention
-- Long-term data storage
+#### Storage Class Decision Tree
+<p align="center">
+  <img src="images/aws-storage-class-decision-tree.png">
+</p>
 
 ---
 
@@ -218,9 +195,9 @@ When choosing a storage solution, consider:
 
 AWS provides a comprehensive suite of storage services tailored to different application needs:
 
-- **S3** for scalable object storage
 - **EBS** for high-performance block storage
 - **EFS** for shared file systems
+- **S3** for scalable object storage
 - **Glacier** for archival storage
 
 Selecting the correct storage service is a fundamental system design decision that directly impacts performance, cost, and scalability.
