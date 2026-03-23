@@ -7,6 +7,10 @@ Amazon networking services provide the foundational infrastructure that enables 
 ---
 
 ## Virtual Private Cloud (vpc)
+<p align="center">
+  <img src="images/vpc.png">
+</p>
+
 
 A VPC is a logically isolated network within AWS where you can launch resources such as EC2 instances.
 
@@ -97,6 +101,12 @@ Route tables determine how traffic is directed within a VPC.
 - Controls whether a subnet is public or private
 
 ---
+
+## Network Security
+
+<p align="center">
+  <img src="images/nacls-and-security-groups.png">
+</p>
 
 ## Security Groups
 
@@ -190,3 +200,16 @@ AWS provides built-in DNS and DHCP services within a VPC.
 - Internet Gateway and NAT Gateway define internet access patterns
 - Security Groups and NACLs enforce layered security
 - Proper design enables scalability, isolation, and fault tolerance
+
+---
+
+## 📚 References
+
+### 🌐 Online
+- [AWS Networking Basics For Programmers](https://youtu.be/2doSoMN2xvI?si=V1PRuYl8aKloMx6_) – *Travis Media*
+- [Virtual Private Cloud Basics](https://youtu.be/7_NNlnH7sAg?si=FtdWIKq5D-PB6ZJ1) – *Tiny Technical Tutorials*
+- [How IP Addressing and CIDRs Work](https://youtu.be/kRDtwr1dPpw?si=7yFon7NL78tiYNO4) – *Tiny Technical Tutorials*
+- [Security Groups](https://youtu.be/uYDT2SsHImQ) – *Tiny Technical Tutorials*
+
+### 📖 Books
+- **The Self-Taught Cloud Computing Engineer** | Chapter 3: Amazon Networking Services — *Dr. Logan Song*  

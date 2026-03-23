@@ -208,9 +208,9 @@ Selecting the correct storage service is a fundamental system design decision th
 ## 📚 References
 
 ### 🌐 Online
-- [AWS Storage Explained | EBS vs EFS vs S3 | AWS Training](https://youtu.be/C9StEK6EMQY?si=bISyYGGKabftYnVl) – *KodeKloud*
-- [Amazon/AWS S3 (Simple Storage Service) Basics | S3 Tutorial, Creating a Bucket | AWS for Beginners](https://youtu.be/mDRoyPFJvlU?si=P4cOip8B7sZtsdGK) – *Tiny Technical Tutorials*
 - [AWS Storage - EBS vs S3 vs EFS](https://youtu.be/6vNC_BCqFmI?si=mN_8ivUIXfNRD4Yt) – *AWS with Chetan*
+- [AWS Storage Explained | EBS vs EFS vs S3](https://youtu.be/C9StEK6EMQY?si=bISyYGGKabftYnVl) – *KodeKloud*
+- [AWS S3 Tutorial, Creating a Bucket](https://youtu.be/mDRoyPFJvlU?si=P4cOip8B7sZtsdGK) – *Tiny Technical Tutorials*
 
 ### 📖 Books
 - **The Self-Taught Cloud Computing Engineer** | Chapter 2: Amazon Cloud Storage Services — *Dr. Logan Song*  
