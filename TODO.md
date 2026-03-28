@@ -16,6 +16,8 @@
 
 ## OSI Model vs TCP/IP Model
 - OSI
+  - [The BEST OSI Model Explanation You'll Ever Watch](https://www.youtube.com/shorts/0dQx0TzBuQc) – *KodeKloud
+  - [What is OSI Model](https://www.youtube.com/watch?v=0y6FtKsg6J4) – *ByteByteGo*
 - TCP/IP
 
 ## Access Points
